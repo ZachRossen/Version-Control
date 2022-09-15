@@ -88,7 +88,7 @@ class GitTester {
 		File blobFile = new File("objects"+File.separator+"86f441fa0e99f2a36784217a323cea1f5fc0b7f6");
 		assertTrue(blobFile.exists());
 
-		assertTrue(readFile("index").equals("testText1.txt : 86f441fa0e99f2a36784217a323cea1f5fc0b7f6"));
+		assertTrue(readFile("index").equals("testText1.txt : 86f441fa0e99f2a36784217a323cea1f5fc0b7f6\n"));
 	}
 	
 	static void testRemove() throws Exception {
